@@ -3,8 +3,6 @@
 ### Kotlin
 - Closures vs. Lambdas
 - Inline functions & reified type parameters
-- Extensions
-- Companion Objects
+- Null Safety 
 - Class Delegation & Delegated Properties
-- Null Safety
-- Type-Safe Builders
+- Companion Objects
