@@ -3,7 +3,7 @@ package ch.hslu.pcp.kotlin.closureslambdas
 import java.util.stream.Collectors
 
 private fun sampleStream() {
-    val strings = "This is a simple example to show you the power of lambdas".split(" ").stream()
+    val strings = "This is a simple example with lambdas".split(" ").stream()
     val output = strings
             .filter { s -> s.length > 2 }
 //                    .filter { it.length > 2 }
