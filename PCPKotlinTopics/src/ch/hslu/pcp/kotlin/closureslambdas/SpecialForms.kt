@@ -3,14 +3,14 @@ package ch.hslu.pcp.kotlin.closureslambdas
 import java.util.stream.Collectors
 
 private fun sampleStream() {
-    val strings = "This is a simple example with lambdas".split(" ").stream()
+    val strings = "This is a simple example with lambdas".split(" ")
     val output = strings
             .filter { s -> s.length > 2 }
 //                    .filter { it.length > 2 }
             .map { s -> s.toUpperCase() }
 //                    .map { it.toUpperCase() }
             .sorted()
-            .collect(Collectors.joining(" "))
+            .reduce { acc, s -> "$acc $s" }
     println(output)
 }
 
