@@ -1,9 +1,7 @@
 package ch.hslu.pcp.kotlin.extensions
 
-import java.util.stream.Collectors
-
 fun String.capitalizeEachWord(): String {
-    return this.split(" ").stream().map { t -> t.capitalize() }.collect(Collectors.joining(" "))
+    return this.split(" ").map { t -> t.capitalize() }.reduce { acc, s -> "$acc $s" }
 }
 
 fun Int.square(): Int {
