@@ -44,6 +44,7 @@ fun main(args: Array<String>) {
 //                // Non-local return
 //                return
 //            },
+//            divide = { a: Int, b: Int -> return@calculate },
             divide = { a: Int, b: Int -> inlineFunctions.divide(a, b) })
     println("Again some addition: ")
     addition(35, 10)
